@@ -34,5 +34,6 @@ void ASimActorBase::BeginPlay()
 {
 	Super::BeginPlay();
 
+
 }
 
