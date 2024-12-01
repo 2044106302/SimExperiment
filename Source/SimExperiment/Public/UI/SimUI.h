@@ -22,15 +22,13 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Component")
 	UUxtUIElementComponent* UxtUIElementComponent;
-
-
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Component")
 	UUxtPalmUpConstraintComponent* UxtPalmUpConstraintComponent;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Component")
 	UUxtBackPlateComponent* UxtBackPlateComponent;
 
-	
 
 protected:
 	virtual void BeginPlay() override;
@@ -38,13 +36,11 @@ protected:
 public:	
 	virtual void Tick(float DeltaTime) override;
 
-
-
-
-
 protected:
 
-
+    UFUNCTION()
 	void UxtPalmUpConstraintOnConstraint();
+
+	UFUNCTION()
 	void UxtPalmUpConstraintOnDeactivated();
 };

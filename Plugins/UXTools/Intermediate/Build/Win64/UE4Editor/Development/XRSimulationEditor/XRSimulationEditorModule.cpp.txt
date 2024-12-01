@@ -1,6 +1,6 @@
-D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulationEditor\Definitions.XRSimulationEditor.h
+D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulationEditor\Definitions.XRSimulationEditor.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Developer\Settings\Public\ISettingsModule.h
-D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\XRSimulation\Public\XRSimulationRuntimeSettings.h
+D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\XRSimulation\Public\XRSimulationRuntimeSettings.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Animation/AnimInstance.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Animation/AnimMontage.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\Engine\Public\AlphaBlend.h
@@ -13,4 +13,4 @@ D:\UnrealEngine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Ani
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Animation/AnimNotifies/AnimNotify.h
 D:\UnrealEngine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimNotify.generated.h
 D:\UnrealEngine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimInstance.generated.h
-D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\XRSimulation\XRSimulationRuntimeSettings.generated.h
+D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\XRSimulation\XRSimulationRuntimeSettings.generated.h

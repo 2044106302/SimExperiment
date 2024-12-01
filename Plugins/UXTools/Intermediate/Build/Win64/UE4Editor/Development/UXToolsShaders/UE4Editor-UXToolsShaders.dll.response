@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h.obj"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\UXToolsShaders.cpp.obj"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\Default.rc2.res"
+"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h.obj"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\UXToolsShaders.cpp.obj"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\Default.rc2.res"
 "D:\UnrealEngine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Projects\UE4Editor-Projects.lib"
 "D:\UnrealEngine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\RenderCore\UE4Editor-RenderCore.lib"
 "D:\UnrealEngine\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
@@ -63,7 +63,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Binaries\Win64\UE4Editor-UXToolsShaders.dll"
-/IMPLIB:"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\UE4Editor-UXToolsShaders.suppressed.lib"
-/PDB:"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Binaries\Win64\UE4Editor-UXToolsShaders.pdb"
+/OUT:"D:\GraduationProject\SimExperiment\Plugins\UXTools\Binaries\Win64\UE4Editor-UXToolsShaders.dll"
+/IMPLIB:"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\UE4Editor-UXToolsShaders.suppressed.lib"
+/PDB:"D:\GraduationProject\SimExperiment\Plugins\UXTools\Binaries\Win64\UE4Editor-UXToolsShaders.pdb"
 /ignore:4078

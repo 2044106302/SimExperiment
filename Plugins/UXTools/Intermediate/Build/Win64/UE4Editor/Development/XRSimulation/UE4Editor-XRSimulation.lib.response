@@ -6,8 +6,8 @@
 /NAME:"UE4Editor-XRSimulation.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.cpp.obj"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.gen.cpp.obj"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Default.rc2.res"
-/OUT:"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\UE4Editor-XRSimulation.lib"
+"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.cpp.obj"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.gen.cpp.obj"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Default.rc2.res"
+/OUT:"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\UE4Editor-XRSimulation.lib"

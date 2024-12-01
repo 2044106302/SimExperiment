@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Private
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Private
 /I Runtime
 /I Runtime\Projects\Public
 /I Runtime\TraceLog\Public
@@ -40,20 +40,20 @@
 /I Runtime\Json\Public
 /I Runtime\RenderCore\Public
 /I Runtime\RHI\Public
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Public
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Public
 /I E:\VisualStudio2022\IDE\VC\Tools\MSVC\14.41.34120\INCLUDE
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\winrt"
-/FI"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h"
-/Yu"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h"
-/Fp"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h.pch"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Private\UXToolsShaders.cpp"
-/FI"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\Definitions.UXToolsShaders.h"
-/Fo"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\UXToolsShaders.cpp.obj"
+/FI"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h"
+/Yu"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h"
+/Fp"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\Core\SharedPCH.Core.ShadowErrors.h.pch"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Private\UXToolsShaders.cpp"
+/FI"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\Definitions.UXToolsShaders.h"
+/Fo"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\UXToolsShaders.cpp.obj"
 /TP
 /GR-
 /W4

@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXToolsEditor\Private
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXToolsEditor\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
 /I Editor
 /I Programs\UnrealLightmass\Public
@@ -245,11 +245,11 @@
 /I Editor\SceneOutliner\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CurveEditor
 /I Editor\CurveEditor\Public
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\UXToolsEditor
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXToolsEditor\Public
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\UXTools
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXTools\Public
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\UXToolsEditor
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXToolsEditor\Public
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\UXTools
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXTools\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
@@ -290,12 +290,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\winrt"
-/FI"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Yu"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsEditor\Module.UXToolsEditor.cpp"
-/FI"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsEditor\Definitions.UXToolsEditor.h"
-/Fo"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsEditor\Module.UXToolsEditor.cpp.obj"
+/FI"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Yu"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Fp"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsEditor\Module.UXToolsEditor.cpp"
+/FI"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsEditor\Definitions.UXToolsEditor.h"
+/Fo"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsEditor\Module.UXToolsEditor.cpp.obj"
 /TP
 /GR-
 /W4

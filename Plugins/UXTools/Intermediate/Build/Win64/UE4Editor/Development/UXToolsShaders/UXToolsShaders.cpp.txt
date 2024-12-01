@@ -1,5 +1,5 @@
-D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\Definitions.UXToolsShaders.h
-D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Public\UXToolsShaders.h
+D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\UXToolsShaders\Definitions.UXToolsShaders.h
+D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\UXToolsShaders\Public\UXToolsShaders.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\ShaderCore.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\UniformBuffer.h
 D:\UnrealEngine\UE_4.27\Engine\Source\Runtime\RenderCore\Public\ShaderParameterMacros.h

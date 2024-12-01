@@ -33,9 +33,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SimPawn")
 	AUxtHandInteractionActor* UxtHandInteractionActorR;
 
+
+	UFUNCTION()
+	void HandOnClicked(AActor* TouchedActor , FKey ButtonPressed);
+	
+public:
+    	void ResetUxtHandInteraction();
 protected:
-
-
+	
 	virtual void BeginPlay() override;
 
 };

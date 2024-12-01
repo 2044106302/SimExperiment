@@ -17,5 +17,11 @@ class SIMEXPERIMENT_API ASimExperimentGameMode : public AGameModeBase
 
 public:
 	ASimExperimentGameMode();
+
+	virtual void InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage) override;
+
+
+	void SpawnLight();
+	
 	
 };

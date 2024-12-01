@@ -22,6 +22,8 @@ class SIMEXPERIMENT_API IGrabbableInterface
 
 public:
 
+	virtual void  Fixed()  = 0;
+	
 	virtual  UUxtGenericManipulatorComponent* GetUxtGenericManipulatorComponent() const  = 0;
 
 

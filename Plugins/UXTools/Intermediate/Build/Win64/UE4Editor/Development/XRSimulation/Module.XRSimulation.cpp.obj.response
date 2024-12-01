@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\XRSimulation\Private
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\XRSimulation\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime
 /I Runtime\AugmentedReality\Public
@@ -236,9 +236,9 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AIModule
 /I Runtime\AIModule\Public
 /I Runtime\AIModule\Classes
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\XRSimulation
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source
-/I D:\UE4.27Project\SimExperiment\Plugins\UXTools\Source\XRSimulation\Public
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Inc\XRSimulation
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source
+/I D:\GraduationProject\SimExperiment\Plugins\UXTools\Source\XRSimulation\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -268,12 +268,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\winrt"
-/FI"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Yu"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"D:\UE4.27Project\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.cpp"
-/FI"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Definitions.XRSimulation.h"
-/Fo"D:\UE4.27Project\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.cpp.obj"
+/FI"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Yu"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Fp"D:\GraduationProject\SimExperiment\Intermediate\Build\Win64\SimExperimentEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
+"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.cpp"
+/FI"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Definitions.XRSimulation.h"
+/Fo"D:\GraduationProject\SimExperiment\Plugins\UXTools\Intermediate\Build\Win64\UE4Editor\Development\XRSimulation\Module.XRSimulation.cpp.obj"
 /TP
 /GR-
 /W4

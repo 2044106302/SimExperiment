@@ -3,37 +3,93 @@
 
 #include "Actor/SimActorBase.h"
 #include "Interactions/UxtGenericManipulatorComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Pawn/SimPawn.h"
+#include "Tooltips/UxtTooltipActor.h"
+
 
 ASimActorBase::ASimActorBase()
 {
 	PrimaryActorTick.bCanEverTick = false;
-
 	UxtGenericManipulator = CreateDefaultSubobject<UUxtGenericManipulatorComponent>(TEXT("UxtGenericManipulator"));
-	SetCanGrab(false);
+
+	// Mesh 需要添加 碰撞预设
+	SetRootComponent(CreateDefaultSubobject<USceneComponent>(TEXT("Root")));
+	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	Mesh->SetupAttachment(GetRootComponent());
+
+	UxtGenericManipulator->OnBeginGrab.AddDynamic(this,&ThisClass::OnBeginGrab);
+	UxtGenericManipulator->OnEndGrab.AddDynamic(this,&ThisClass::OnEndGrab);
+	UxtGenericManipulator->OneHandRotationMode = EUxtOneHandRotationMode::RotateAboutGrabPoint;
+	// 添加物理模拟有问题暂时
+	Mesh->SetSimulatePhysics(false);
+
+	// Tips
+	TipsInfo = CreateDefaultSubobject<UChildActorComponent>(TEXT("Tips"));
+	TipsInfo->SetupAttachment(Mesh);
+	TipsInfo->SetChildActorClass(AUxtTooltipActor::StaticClass());
+
+	
 }
+
+void ASimActorBase::RerunConstructionScripts()
+{
+	Super::RerunConstructionScripts();
+	if (!bStartGame)
+	{
+		SetTipsInfo(DefaultName);
+	}
+
+	
+}
+
 
 UUxtGenericManipulatorComponent* ASimActorBase::GetUxtGenericManipulatorComponent() const
 {
 	return UxtGenericManipulator;
 }
 
-void ASimActorBase::SetCanGrab(bool bCanGrab /*= true*/)
+void ASimActorBase::Fixed() 
 {
-	if (bCanGrab)
+	if (UxtGenericManipulator)
 	{
-		UxtGenericManipulator->SetComponentTickEnabled(true);
+		UxtGenericManipulator->DestroyComponent(true);
+		UxtGenericManipulator= nullptr;
+		if (ASimPawn* SimPawn =  Cast<ASimPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)))
+		{
+			SimPawn->ResetUxtHandInteraction();
+		
+		}
 	}
-	else
-	{
-		UxtGenericManipulator->SetComponentTickEnabled(false);
-	}
-
 }
+
 
 void ASimActorBase::BeginPlay()
 {
 	Super::BeginPlay();
 
+	bStartGame = true;
+	SetTipsInfo(DefaultName);
+	
+}
+
+void ASimActorBase::OnBeginGrab(UUxtGrabTargetComponent* Grabbable, FUxtGrabPointerData GrabPointer)
+{
 
 }
+
+void ASimActorBase::OnEndGrab(UUxtGrabTargetComponent* Grabbable, FUxtGrabPointerData GrabPointer)
+{
+
+}
+
+void ASimActorBase::SetTipsInfo(const FText& NewTipsInfo) const
+{
+	if (AUxtTooltipActor* TooltipActor = Cast<AUxtTooltipActor>(TipsInfo->GetChildActor()))
+	{
+		TooltipActor->SetText(NewTipsInfo);
+	}
+
+}
+
 
