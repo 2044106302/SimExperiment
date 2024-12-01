@@ -6,12 +6,18 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Input/UxtHandInteractionActor.h"
 #include "Camera/CameraComponent.h"
+#include "Tooltips/UxtTooltipActor.h"
 
 ASimPawn::ASimPawn()
 {
+	PrimaryActorTick.bCanEverTick = false;
 	GetCollisionComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	GetMeshComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
+	// Tips
+	TipsInfo = CreateDefaultSubobject<UChildActorComponent>(TEXT("Tips"));
+	TipsInfo->SetupAttachment(GetMeshComponent());
+	TipsInfo->SetChildActorClass(AUxtTooltipActor::StaticClass());
 }
 
 
@@ -20,6 +26,9 @@ void ASimPawn::BeginPlay()
 {
 	Super::BeginPlay();
 	ResetUxtHandInteraction();
+	
+	bStartGame = true;
+	SetTipsInfo(DefaultTips);
 
 
 }
@@ -27,6 +36,16 @@ void ASimPawn::BeginPlay()
 void ASimPawn::HandOnClicked(AActor* TouchedActor, FKey ButtonPressed)
 {
 	UE_LOG(LogTemp, Display, TEXT("HandOnClicked"));
+}
+
+void ASimPawn::SetTipsInfo(const FText& NewTipsInfo) const
+{
+	if (AUxtTooltipActor* TooltipActor = Cast<AUxtTooltipActor>(TipsInfo->GetChildActor()))
+	{
+		TooltipActor->SetText(NewTipsInfo);
+	}
+
+	
 }
 
 void ASimPawn::ResetUxtHandInteraction()
@@ -55,4 +74,13 @@ void ASimPawn::ResetUxtHandInteraction()
 	UxtHandInteractionActorR->OnClicked.AddDynamic(this, &ASimPawn::HandOnClicked);
 
 	
+}
+
+void ASimPawn::RerunConstructionScripts()
+{
+	Super::RerunConstructionScripts();
+	if (!bStartGame)
+	{
+		SetTipsInfo(DefaultTips);
+	}
 }

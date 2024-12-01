@@ -21,6 +21,9 @@ public:
 
 public:
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Components")
+	class UStaticMeshComponent* Mesh;
+
 	virtual UUxtGenericManipulatorComponent* GetUxtGenericManipulatorComponent() const override;
 	
 	// 固定 Actor 代表已经 抵达预定位置 将不能再被抓取 和 移动
@@ -53,8 +56,7 @@ protected:
 	FText DefaultName;
 
 	
-	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Components")
-	class UStaticMeshComponent* Mesh;
+
 
 
 	// 物品信息 如果是物体默认显示为 物体的名称 如 万用表

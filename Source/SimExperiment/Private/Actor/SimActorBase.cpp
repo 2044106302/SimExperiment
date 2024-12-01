@@ -26,7 +26,7 @@ ASimActorBase::ASimActorBase()
 
 	// Tips
 	TipsInfo = CreateDefaultSubobject<UChildActorComponent>(TEXT("Tips"));
-	TipsInfo->SetupAttachment(Mesh);
+	TipsInfo->SetupAttachment(GetRootComponent());
 	TipsInfo->SetChildActorClass(AUxtTooltipActor::StaticClass());
 
 	
@@ -87,7 +87,17 @@ void ASimActorBase::SetTipsInfo(const FText& NewTipsInfo) const
 {
 	if (AUxtTooltipActor* TooltipActor = Cast<AUxtTooltipActor>(TipsInfo->GetChildActor()))
 	{
-		TooltipActor->SetText(NewTipsInfo);
+		if (NewTipsInfo.ToString().Len() == 0)
+		{
+			TooltipActor->SetActorHiddenInGame(true);
+		}
+		else
+		{
+			TooltipActor->SetActorHiddenInGame(false);
+			TooltipActor->SetText(NewTipsInfo);
+		}
+		
+
 	}
 
 }

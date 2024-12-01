@@ -8,7 +8,7 @@ public class SimExperiment : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore","UXTools" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore","UXTools","CableComponent" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
