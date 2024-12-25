@@ -33,12 +33,12 @@ protected:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="SimWireSpawner")
 	UChildActorComponent* CableChildActor;
 
+
+	// 将线头固定 住
+	UFUNCTION(BlueprintCallable, Category = "SimActor")
+	virtual  void Fixed();
 	
 private:
-
-
-	
-
 	// 强制 材质和 Thrum1 相同
 	void UpDataCableMaterial() const;
 	

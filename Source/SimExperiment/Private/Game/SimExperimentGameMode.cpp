@@ -6,6 +6,7 @@
 
 ASimExperimentGameMode::ASimExperimentGameMode()
 {
+	this->PrimaryActorTick.bCanEverTick = false;
 	DefaultPawnClass = ASimPawn::StaticClass();
 	
 

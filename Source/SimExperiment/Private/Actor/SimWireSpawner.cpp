@@ -15,6 +15,7 @@ ASimWireSpawner::ASimWireSpawner()
 	
 	Thrum1ChildActor = CreateDefaultSubobject<UChildActorComponent>(TEXT("Thrum1"));
 	Thrum2ChildActor = CreateDefaultSubobject<UChildActorComponent>(TEXT("Thrum2"));
+
 	Thrum1ChildActor->SetupAttachment(GetRootComponent());
 	Thrum2ChildActor->SetupAttachment(GetRootComponent());
 
@@ -31,11 +32,16 @@ void ASimWireSpawner::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Thrum1ChildActor->GetChildActor()->SetOwner(this);
+	Thrum2ChildActor->GetChildActor()->SetOwner(this);
+
 	CastChecked<ACableActor>(CableChildActor->GetChildActor())->CableComponent->SetAttachEndToComponent(
 		CastChecked<ASimActorBase>(Thrum2ChildActor->GetChildActor())->Mesh,FName(TEXT("Junction")));
 
 	CableChildActor->GetChildActor()->AttachToComponent(CastChecked<ASimActorBase>(Thrum1ChildActor->GetChildActor())->Mesh,
 		FAttachmentTransformRules(EAttachmentRule::SnapToTarget,false),FName(TEXT("Junction")));
+
+
 
 	bStartGame = true;
 	UpDataCableMaterial();
@@ -50,6 +56,13 @@ void ASimWireSpawner::RerunConstructionScripts()
 		UpDataCableMaterial();
 		SetCableInitProperty();
 	}
+}
+
+void ASimWireSpawner::Fixed()
+{
+	CastChecked<ASimActorBase>(Thrum1ChildActor->GetChildActor())->Fixed();
+	CastChecked<ASimActorBase>(Thrum2ChildActor->GetChildActor())->Fixed();
+
 }
 
 void ASimWireSpawner::UpDataCableMaterial() const

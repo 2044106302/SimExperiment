@@ -9,7 +9,7 @@
 #include "SimActorBase.generated.h"
 
 UCLASS()
-class SIMEXPERIMENT_API ASimActorBase : public AActor, public IGrabbableInterface
+class SIMEXPERIMENT_API ASimActorBase : public AActor
 {
 	GENERATED_BODY()
 	
@@ -24,10 +24,11 @@ public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Components")
 	class UStaticMeshComponent* Mesh;
 
-	virtual UUxtGenericManipulatorComponent* GetUxtGenericManipulatorComponent() const override;
+	virtual UUxtGenericManipulatorComponent* GetUxtGenericManipulatorComponent() const;
 	
 	// 固定 Actor 代表已经 抵达预定位置 将不能再被抓取 和 移动
-	virtual  void Fixed() override;
+	UFUNCTION(BlueprintCallable,Category = "SimActor")
+	virtual  void Fixed();
 	
 protected:
 
